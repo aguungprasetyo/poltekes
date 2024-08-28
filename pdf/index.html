@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLogbook Poltekes Yogyakarta</title>
+    <style>
+        /* Root and Global Styles */
+        :root {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            --font-family: Arial, sans-serif;
+            --font-size: 0.9rem;
+            --text-color: #212121;
+            --border-color: #f5f5f5;
+            --box-bg-color: #2ABAAD;
+            --box-text-color: #fefefe;
+            --padding: 2rem;
+            --margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            max-width: 655px;
+            margin: 0;
+            font-family: var(--font-family);
+            font-size: var(--font-size);
+            color: var(--text-color);
+            padding: var(--padding) 4rem;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 4rem 5rem 2rem 0;
+            font-size: 0.8rem;
+        }
+
+        header img {
+            max-width: 20%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            margin-bottom: 1rem;
+        }
+
+        h1, h3 {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.2rem;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1.2rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+        }
+
+        .box h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .box-2 {
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            padding: 0.8rem 1rem;
+            border-radius: 0.5rem;
+            gap: 1rem;
+            background-color: var(--box-bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--box-text-color);
+        }
+
+        .box-2 p {
+            margin: 0;
+        }
+
+        .img-dokumentasi {
+            padding-top: 0.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        img {
+            max-width: 48%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        /* Media Query for Print */
+        @media print {
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+
+            header {
+                padding: 0 5rem 1rem 0;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .box-2 {
+                color: var(--text-color);
+                border: 1px solid var(--border-color);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Document -->
+        <header>
+            <img src="./src/img/polkesyo.png" alt="Polkesyo Logo">
+            <h1>LAPORAN KEGIATAN MAGANG POLITEKNIK KESEHATAN YOGYAKARTA</h1>
+        </header>
+        
+        <!-- Kegiatan / Hari / Tanggal -->
+        <section class="box-2">
+            <h3>Kegiatan Ke-1</h3>
+            <p>[Get Date]</p>
+        </section>
+        
+        <!-- Daftar Kelompok -->
+        <section class="box">
+            <h3>Daftar Kelompok</h3>
+            <ul>
+                <li><p>123456 Agung Nugroho</p></li>
+                <li><p>123456 Rizky Prasetyo</p></li>
+                <li><p>123456 Johan Prakoso</p></li>
+                <li><p>123456 Sapto Seotian</p></li>
+            </ul>
+        </section>
+        
+        <!-- Detailed Box -->
+        <div class="box">
+            <!-- Judul Kegiatan -->
+            <section>
+                <h3>Judul Kegiatan</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero in aut quaerat, pariatur impedit ipsum numquam blanditiis adipisci nulla vitae, vero tempora nam, voluptas ipsa est velit odio corrupti.</p>
+            </section>
+            
+            <!-- Deskripsi Kegiatan -->
+            <section>
+                <h3>Deskripsi Kegiatan</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat libero in aut quaerat, pariatur impedit ipsum numquam blanditiis adipisci nulla vitae, vero tempora nam, voluptas ipsa est velit odio corrupti.</p>
+            </section>
+
+            <!-- Foto Dokumentasi -->
+            <section>
+                <h3>Dokumentasi</h3>
+                <section class="img-dokumentasi">
+                    <img src="https://unair.ac.id/wp-content/uploads/2023/05/Kegiatan-Magang-di-SMP-Negeri-19-Surabaya-Memberikan-Kesan-yang-Baik-Bagi-Siswa-dan-Mahasiswa-Universitas-Airlangga-hello-bubu.webp" alt="Dokumentasi 1">
+                    <img src="https://edufund.co.id/blog/wp-content/uploads/2021/09/manfaat-kegiatan-magang-untuk-mahasiswa-min.png" alt="Dokumentasi 2">
+                </section>
+            </section>
+            
+            <!-- Tanggapan Dosen -->
+            <section>
+                <h3>Tanggapan</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, odio adipisci? Sequi quod esse voluptate, laboriosam veniam aspernatur aut excepturi culpa est, ullam molestiae vero impedit doloremque obcaecati asperiores dignissimos.</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Politeknik Kesehatan Yogyakarta</p>
+    </footer>
+</body>
+</html>
